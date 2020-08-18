@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         wv.setWebViewClient(new MyBrowser());
         wv.getSettings().setLoadsImagesAutomatically(true);
         wv.getSettings().setJavaScriptEnabled(true);
+	   //wv.getSettings().setDomStorageEnabled(true); //for react site
         wv.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
         wv.loadUrl("https://google.com");
         swipeContainer.setRefreshing(true);
